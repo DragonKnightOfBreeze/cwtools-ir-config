@@ -19,24 +19,29 @@ types = {
             desc = localisation
         }
 
+        ## group = event_type
         ## push_scope = country
-        subtype[country_event] = {
+        subtype[country] = {
             type = country_event
         }
+        ## group = event_type
         ## push_scope = country
-        subtype[major_country_event] = {
+        subtype[major_country] = {
             type = major_country_event
         }
+        ## group = event_type
         ## push_scope = province
-        subtype[province_event] = {
+        subtype[province] = {
             type = province_event
         }
+        ## group = event_type
         ## push_scope = character
-        subtype[character_event] = {
+        subtype[character] = {
             type = character_event
         }
+        ## group = event_type
         ## push_scope = state
-        subtype[state_event] = {
+        subtype[state] = {
             type = state_event
         }
 
