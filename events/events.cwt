@@ -20,6 +20,11 @@ types = {
         }
 
         ## group = event_type
+        subtype[scopeless] = {
+            ## cardinality = 0..0
+            type = scalar
+        }
+        ## group = event_type
         ## push_scope = country
         subtype[country] = {
             type = country_event
@@ -57,6 +62,7 @@ types = {
 }
 
 event = {
+    ## cardinality = 0..1
     type = enum[event_types]
 
     subtype[hidden] = {
