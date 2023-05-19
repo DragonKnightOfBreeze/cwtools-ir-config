@@ -135,22 +135,15 @@ alias[effect:change_country_adjective] = localisation
 ###sets the governor of a province to the specified character
 alias[effect:set_as_governor] = scope[character]
 
-# TODO: Proper switch support
-###Switch on a trigger for the evaluation of another trigger with an optional fallback trigger. switch = { 	trigger = simple_assign_trigger 	case_1 = { <effects> } 	case_2 = { <effects> } 	case_n = { <effects> } 	fallback = { <effects> }
+### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger.
 alias[effect:switch] = {
-    trigger = scalar
-
-    ## cardinality = 1..inf
-    scalar = {
-        ## cardinality = 0..inf
-        alias_name[effect] = alias_match_left[effect]
-    }
-
+    trigger = alias_keys_field[trigger]
+    ## cardinality = 0..inf
+    # for key of this property, config will be overridden by:
+    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    scalar = { alias_name[trigger] = alias_match_left[trigger] }
     ## cardinality = 0..1
-    fallback = {
-        ## cardinality = 0..inf
-        alias_name[effect] = alias_match_left[effect]
-    }
+    fallback = { alias_name[trigger] = alias_match_left[trigger] }
 }
 
 ###changes the historical tag of a country

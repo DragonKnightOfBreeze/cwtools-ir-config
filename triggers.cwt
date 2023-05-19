@@ -132,22 +132,15 @@ alias[trigger:war_with] = scope[country]
 ###Is the country this culture group?
 alias[trigger:country_culture_group] = <culture_group>
 
-# TODO: not scalar
-###Switch on a trigger for the evaluation of another trigger with an optional fallback trigger. switch = { 	trigger = simple_assign_trigger 	case_1 = { <triggers> } 	case_2 = { <triggers> } 	case_n = { <triggers> } 	fallback = { <triggers> }
+### Switch on a trigger for the evaluation of another trigger with an optional fallback trigger.
 alias[trigger:switch] = {
-    trigger = scalar
-
-    ## cardinality = 1..inf
-    scalar = {
-        ## cardinality = 1..inf
-        alias_name[trigger] = alias_match_left[trigger]
-    }
-
-    ## cardinality = 0..1
-    fallback = {
-        ## cardinality = 1..inf
-        alias_name[trigger] = alias_match_left[trigger]
-    }
+    trigger = alias_keys_field[trigger]
+    ## cardinality = ~1..inf
+    # for key of this property, config will be overridden by:
+    # icu.windea.pls.lang.config.impl.ParadoxSwitchCaseOverriddenConfigProvider
+    scalar = { alias_name[trigger] = alias_match_left[trigger] }
+    ## cardinality = ~1..1
+    fallback = { alias_name[trigger] = alias_match_left[trigger] }
 }
 
 ###Is the character a parent of the target character?
