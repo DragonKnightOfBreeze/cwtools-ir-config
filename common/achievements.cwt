@@ -1,10 +1,9 @@
 types = {
 	type[achievement] = {
 		path = "game/common/achievements"
-
 		localisation = {
 			name = "ACHIEVEMENT_$"
-			description = "ACHIEVEMENT_DESC_$"
+			desc = "ACHIEVEMENT_DESC_$"
 			tooltip = "$_tooltip"
 		}
 	}

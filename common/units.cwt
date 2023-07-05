@@ -12,7 +12,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             # no_culture_group_name = "$_noculturegroup"
             # <culture_group>_name = "$_<culture_group>"
             # loc for dynamic modifiers (like $_cost)?

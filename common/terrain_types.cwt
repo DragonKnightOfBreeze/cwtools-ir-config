@@ -1,10 +1,9 @@
 types = {
     type[terrain] = {
         path = "game/common/terrain_types"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

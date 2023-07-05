@@ -1,10 +1,9 @@
 types = {
     type[office] = {
         path = "game/common/offices"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             # _<culture_group>
         }
     }

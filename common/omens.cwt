@@ -1,10 +1,9 @@
 types = {
     type[omen] = {
         path = "game/common/omens"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             # _TAG, _religion
         }
     }

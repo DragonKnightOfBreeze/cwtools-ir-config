@@ -1,10 +1,9 @@
 types = {
     type[governor_policy] = {
         path = "game/common/governor_policies"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

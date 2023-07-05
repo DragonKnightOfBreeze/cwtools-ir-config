@@ -4,7 +4,7 @@ types = {
 
 		localisation = {
 			name = "$"
-			description = "$_desc"
+			desc = "$_desc"
 			tooltip = "$_tooltip"
 		}
 	}

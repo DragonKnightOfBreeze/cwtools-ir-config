@@ -1,14 +1,12 @@
 types = {
     type[government] = {
         path = "game/common/governments"
-
         subtype[term] = {
             election_delay = int[1..inf]
         }
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             ruler = "$_ruler"
             ruler_female = "$_ruler_female"
             # _TAG, _culture_group versions

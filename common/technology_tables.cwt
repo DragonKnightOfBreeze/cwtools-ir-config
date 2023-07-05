@@ -1,7 +1,6 @@
 types = {
     type[technology_table] = {
         path = "game/common/technology_tables"
-
         localisation = {
             name = "$"
         }

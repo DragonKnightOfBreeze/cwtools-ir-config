@@ -1,9 +1,8 @@
 types = {
     type[death_reason] = {
         path = "game/common/deathreasons"
-
         localisation = {
-            description = "$"
+            desc = "$"
         }
     }
 }

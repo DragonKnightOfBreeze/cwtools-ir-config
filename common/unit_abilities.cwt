@@ -19,7 +19,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$desc"
+            desc = "$desc"
         }
     }
 }

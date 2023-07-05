@@ -1,7 +1,6 @@
 types = {
     type[law_category] = {
         path = "game/common/laws"
-
         localisation = {
             name = "$"
         }
@@ -10,10 +9,9 @@ types = {
     type[law] = {
         path = "game/common/laws"
         skip_root_key = any
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

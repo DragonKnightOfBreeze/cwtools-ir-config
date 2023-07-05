@@ -10,7 +10,7 @@ types = {
             name = "$"
             # Optional, apparently - not used in some languages
             ## optional
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

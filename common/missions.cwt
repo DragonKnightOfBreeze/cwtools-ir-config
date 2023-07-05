@@ -1,20 +1,17 @@
 types = {
     type[missions] = {
         path = "game/common/missions"
-
         localisation = {
             name = "$"
         }
     }
-
     ## type_key_filter <> { chance ai_chance potential abort on_abort on_start on_completion }
     type[mission_task] = {
         path = "game/common/missions"
         skip_root_key = any
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

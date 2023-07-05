@@ -3,7 +3,6 @@ types = {
     ## type_key_filter = { income_tax income_commerce income_tribute expense_army expense_navy expense_fort expense_wages }
     type[economic_policy] = {
         path = "game/common/economic_policies"
-
         localisation = {
             low = "$_low"
             default = "$_default"

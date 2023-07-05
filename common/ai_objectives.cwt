@@ -11,10 +11,9 @@ enums = {
 types = {
     type[ai_objective] = {
         path = "game/common/ai_objectives"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

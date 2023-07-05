@@ -1,10 +1,9 @@
 types = {
     type[trade_goods] = {
         path = "game/common/trade_goods"
-
         localisation = {
             name = "$"
-            description = "$DESC"
+            desc = "$DESC"
         }
     }
 }

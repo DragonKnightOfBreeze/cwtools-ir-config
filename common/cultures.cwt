@@ -1,7 +1,6 @@
 types = {
     type[culture_group] = {
         path = "game/common/cultures"
-
         localisation = {
             name = "$"
             male_name_format = "$_malename"
@@ -14,7 +13,6 @@ types = {
     type[culture] = {
         path = "game/common/cultures"
         skip_root_key = { any culture }
-
         localisation = {
             name = "$"
         }

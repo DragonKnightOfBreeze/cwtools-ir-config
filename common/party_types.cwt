@@ -1,7 +1,6 @@
 types = {
     type[party_type] = {
         path = "game/common/party_types"
-
         localisation = {
             name = "$"
             short = "$_short"

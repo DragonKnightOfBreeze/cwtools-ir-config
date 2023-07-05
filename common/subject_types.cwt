@@ -1,7 +1,6 @@
 types = {
     type[subject_type] = {
         path = "game/common/subject_types"
-
         localisation = {
             name = "$"
             # Jesus that's a lot of extra loc

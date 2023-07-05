@@ -1,20 +1,18 @@
 types = {
     type[military_tradition] = {
         path = "game/common/military_traditions"
-
         localisation = {
             name = "$"
-            description = "$desc"
+            desc = "$desc"
         }
     }
     ## type_key_filter <> { allow on_activate modifier requires}
     type[military_tradition_path] = {
         path = "game/common/military_traditions"
         skip_root_key = any
-
         localisation = {
             name = "$"
-            description = "$desc"
+            desc = "$desc"
         }
     }
 }

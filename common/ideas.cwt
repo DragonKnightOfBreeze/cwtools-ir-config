@@ -10,10 +10,9 @@ enums = {
 types = {
     type[idea] = {
         path = "game/common/ideas"
-
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
         }
     }
 }

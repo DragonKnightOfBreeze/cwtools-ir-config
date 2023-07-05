@@ -4,11 +4,9 @@
 types = {
     type[opinion] = {
         path = "game/common/opinions"
-
         subtype[decaying] = {
             yearly_decay = int
         }
-
         localisation = {
             name = "$"
         }

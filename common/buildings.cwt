@@ -4,7 +4,7 @@ types = {
 
         localisation = {
             name = "$"
-            description = "$_desc"
+            desc = "$_desc"
             # cost = "$_cost" # Not sure if that's defined anywhere else, but seems like it'd be useful to show here
         }
     }

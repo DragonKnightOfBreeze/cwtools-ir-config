@@ -4,7 +4,6 @@ types = {
         path = "game/common"
         path_file = "achievement_groups.txt"
         name_field = name
-
         localisation = {
             name = "ACHIEVEMENT_GROUP_$"
         }

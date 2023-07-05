@@ -1,7 +1,6 @@
 types = {
     type[province_rank] = {
         path = "game/common/province_ranks"
-
         localisation = {
             name = "$"
             # header = "$_header"
