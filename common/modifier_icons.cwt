@@ -4,6 +4,11 @@ types = {
     type[modifier_icon] = {
         path = "game/common/modifier_icons"
     }
+    images = {
+        positive = positive # filepath
+        ## optional
+        negative = negative # filepath
+    }
 }
 
 modifier_icon = {

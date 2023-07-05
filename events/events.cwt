@@ -9,9 +9,7 @@ types = {
         subtype[complex_desc_and_visible] = {
             ## cardinality = 0..1
             hidden = no
-            desc = {
-
-            }
+            desc = {}
         }
         subtype[non_complex_desc_and_visible] = {
             ## cardinality = 0..1
@@ -53,9 +51,13 @@ types = {
         localisation = {
             subtype[!hidden] = {
                 title = title
+                desc = desc
             }
-            subtype[non_complex_desc_and_visible] = {
-                description = desc
+        }
+        images = {
+            subtype[!hidden] = {
+                ## primary
+                picture = picture # <sprite>, can be triggered or/and multiple
             }
         }
     }
