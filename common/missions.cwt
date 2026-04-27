@@ -11,23 +11,23 @@ types = {
         skip_root_key = any
         localisation = {
             name = "$"
-            desc = "$_desc"
+            desc = "$_DESC"
         }
     }
 }
 
 missions = {
     ## cardinality = 0..1
-    header = <event_picture>
+    header = scalar # event_picture doesn't work for headers, since they aren't defined there
     ## cardinality = 0..1
     icon = <icon>
     ## cardinality = 0..1
 	repeatable = bool
     ## cardinality = 0..1
-	chance = single_alias_right[chance_block]
+	chance = single_alias_right[chance_block_with_base]
 
     ## cardinality = 0..1
-	ai_chance = single_alias_right[chance_block]
+	ai_chance = single_alias_right[chance_block_with_base]
 
     ## cardinality = 0..1
     potential = {
@@ -42,13 +42,13 @@ missions = {
     }
 
     ## cardinality = 0..1
-	on_potential = { 
+	on_potential = {
 		## cardinality = 0..inf
         alias_name[effect] = alias_match_left[effect]
 	}
 
     ## cardinality = 0..1
-	on_abort = { 
+	on_abort = {
 		## cardinality = 0..inf
         alias_name[effect] = alias_match_left[effect]
 	}
@@ -60,7 +60,7 @@ missions = {
 	}
 
     ## cardinality = 0..1
-	on_completion = { 
+	on_completion = {
 		## cardinality = 0..inf
         alias_name[effect] = alias_match_left[effect]
 	}
@@ -70,10 +70,16 @@ missions = {
         icon = <icon>
 
         ## cardinality = 0..1
-		requires = { <mission_task> }
+		requires = {
+            ## cardinality = 0..inf
+            <mission_task>
+        }
 
         ## cardinality = 0..1
-        prevented_by = { <mission_task> }
+        prevented_by = {
+            ## cardinality = 0..inf
+            <mission_task>
+        }
 
         ## cardinality = 0..1
 		final = bool
@@ -101,7 +107,7 @@ missions = {
             ## cardinality = 0..inf
             alias_name[trigger] = alias_match_left[trigger]
         }
-        
+
         ## cardinality = 0..1
 	    ai_chance = single_alias_right[chance_block]
 
@@ -110,7 +116,7 @@ missions = {
 
         ## cardinality = 0..1
 		monthly_on_action = <on_action>
-    
+
         ## cardinality = 0..1
         on_start = {
             ## cardinality = 0..inf
