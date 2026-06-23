@@ -26,7 +26,7 @@ single_alias[morph_gene_settings] = {
 
         ## cardinality = 0..1
         ### Format is "tag1,tag2,not(tag3)"
-        required_tags = scalar
+        required_tags = $tags_condition[gene_tag] # since plugin version 2.1.10
 
         value = {
             min = float[-1.0..1.0]
@@ -49,7 +49,7 @@ single_alias[morph_gene_settings] = {
 
         ## cardinality = 0..1
         ### Format is "tag1,tag2,not(tag3)"
-        required_tags = scalar
+        required_tags = $tags_condition[gene_tag] # since plugin version 2.1.10
 
         atlas_pos = {
             ## cardinality = 2..2
@@ -71,7 +71,7 @@ single_alias[morph_gene_settings] = {
     texture_override = {
         ## cardinality = 0..1
         ### Format is "tag1,tag2,not(tag3)"
-        required_tags = scalar
+        required_tags = $tags_condition[gene_tag] # since plugin version 2.1.10
 
         weight = int
 
@@ -124,7 +124,7 @@ single_alias[accessory_subgene_rhs] = {
 
     ## cardinality = 0..1
     ### Format is "tag1,tag2,tag3"
-    set_tags = scalar
+    set_tags = $tags[gene_tag] # since plugin version 2.1.10
 
     ## cardinality = 0..1
     male = {
@@ -224,7 +224,7 @@ morph_gene = {
 
         ## cardinality = 0..1
         ### Format is "tag1,tag2,tag3"
-        set_tags = scalar
+        set_tags = $tags[gene_tag] # since plugin version 2.1.10
 
         ## cardinality = 0..1
         male = single_alias_right[morph_gene_settings]
@@ -274,7 +274,7 @@ special_genes_validation = {
 
                 ## cardinality = 0..1
                 ### Format is "tag1,tag2,tag3"
-                set_tags = scalar
+                set_tags = $tags[gene_tag] # since plugin version 2.1.10
 
                 ## cardinality = 0..1
                 male = single_alias_right[morph_gene_settings]
@@ -303,7 +303,7 @@ special_genes_validation = {
 
                 ## cardinality = 0..1
                 ### Format is "tag1,tag2,tag3"
-                set_tags = scalar
+                set_tags = $tags[gene_tag] # since plugin version 2.1.10
             }
         }
     }
